@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,400;1,500;1,600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins'
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    padding: 1%;
+    background-color:#4070b6;
+    color: white;
+}
+
+header nav ul{
+    list-style: none;
+    background-color: #4070b6;
+    justify-content: center;
+    padding: 0%;
+    margin: 0;
+}
+header ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0px 15px;
+}
+header ul li a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.5;
+}
+header ul li ul.dropdown li{
+    display: block;
+
+}
+header ul li ul.dropdown{
+    width: 100%;
+    background-color: #4070b6;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 10px 15px;
+    border: #444 1px;
+}
+header ul li a.hover{
+    background: #4070b6;
+}
+header ul li:hover ul.dropdown{
+    display: block;
+}
+
+/*la nav bar apres celle qui est dans le haeder*/
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: 'poppins',sans-serif;
+    justify-content: center;
+    background-color: #8dc63f;
+    padding: 0%;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0px 15px;
+    display: inline-block;
+    position: relative;
+}
+nav ul li a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.5s;
+    display: block;
+    text-align: center;
+}
+
+nav li a:hover {
+    text-decoration: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #575757;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+
+}
+
+.search button:hover {
+    background-color: #444;
+}
+img{
+    height: 140px;
+    width: 140px;
+    border-radius: 140px;
+    border: solid 5px;
+    margin-left: 120px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #8dc63f;
+  }
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+.topnav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+/* MAIN */
+
+.tabs{
+    margin-bottom: 20px;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.tab {
+    display: none; /* Masque tous les onglets par défaut */
+}
+.tab.active {
+    display: block; /* Affiche l'onglet actif */
+}
+nav ul li a.active {
+    background-color: #444; /* Couleur de l'onglet actif */
+    border-radius: 25px;
+}   
