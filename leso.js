@@ -15,3 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+document.getElementById('openLinkButton').addEventListener('click', function() {
+    window.open("page d'inscription/connection.html", '_blank'); // Ouvre dans un nouvel onglet
+});
