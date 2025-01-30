@@ -8,53 +8,97 @@
     font-family: 'poppins'
 }
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(image1.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #4070b6;
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #333;
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #5cb85c;
-    color: white;
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 140px;
+    border: solid 5px;
+    margin-left: 120px;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
 }
-
-button:hover {
-    background-color: #4cae4c;
+section{
+    background-color: transparent;
+    padding: 30px;
+    width: 420px;
+    border-radius: 30px;
+    border: 2px solid rgba(225, 255, 255,0.2);
+    backdrop-filter: blur(20px);
 }
-
-p {
+section h1{
+    font-size: 30px;
     text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.input-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-box input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255,0.2);
+    color: #fff;
+    padding-right: 40px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box i {
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    right: 20px;
+    top: 50%;
+}
+.remenber-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.remenber-forget a , .register-link a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5;
+    font-weight: bold;
+}
+.remenber-forget a:hover, .register-link a{
+    text-decoration: underline;
+}
+.login-btn{
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.login-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255,0.2);
+    color: #fff;
+}
+.register-link{
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 14px;
 }

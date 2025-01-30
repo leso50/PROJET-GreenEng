@@ -14,7 +14,7 @@ header {
     align-items: center;
     height: 25vh;
     padding: 1%;
-    background-color:#4070b6;
+    background-color:#124592;
     color: white;
 }
 header div nav ul {
@@ -22,7 +22,7 @@ header div nav ul {
     display: flex;
     margin: 0;
     padding: 0%;
-    background-color: #4070b6;
+    background-color:#124592;
 }
 header div nav ul li{
     margin: 0px 15px;
@@ -87,7 +87,7 @@ div nav li a:hover {
 }
 
 .search button:hover {
-    background-color: #444;
+    background-color: #f7eeee;
 }
 img{
     height: 140px;
@@ -95,6 +95,7 @@ img{
     border-radius: 140px;
     border: solid 5px;
     margin-left: 120px;
+    border: none;
 }
 div ul.topnav {
     overflow: hidden;

@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inscription</title>
     <link rel="stylesheet" href="inscription.css">
+    <script src="https://kit.fontawesome.com/a062f8f6cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Créer un compte</h1>
-        <form id="signupForm">
-            <label for="username">Nom d'utilisateur :</label>
-            <input type="text" id="username" name="username" required>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="password">Mot de passe :</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">S'inscrire</button>
-        </form>
-        <p>Déjà un compte ? <a href="connection.html">Connectez-vous ici</a></p>
-    </div>
+    <section>
+        <div class="logo">
+         <img src="green eng.png">
+         <h1>Inscription</h1>
+     </div>
+          <div class="input-box">
+              <input type="text" placeholder="nom complet">
+              <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="E-mail">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+         <div class="input-box">
+             <input type="password" placeholder="Mot de passe">
+             <i class="fa-solid fa-lock"></i>
+         </div>
+         <div class="input-box">
+            <input type="password" placeholder="Confirmer le mot de passe">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+         <div class="remenber-forget">
+             <label><input type="checkbox">Homme</label>
+             <label><input type="checkbox">Femme</label>
+         </div>
+         <button class="login-btn">cree un compte</button>
+         <div class="register-link">
+             <p>vous avez deja un compte ?</p><a href="connection.html">connection</a>
+         </div>
+     </section>
     <script src="script.js"></script>
 </body>
 </html>
